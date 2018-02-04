@@ -1,2 +1,81 @@
 /*=================STYLE SHEET FOR LANTERN V 2.0==================*/
+/*basic responsive stylings*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+div#wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+article#main {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
 /*================================================================*/
+/*stylings for header and footer*/
+
+#logo {
+  width: 4em;
+  height: 4em;
+  background-color: rebeccapurple;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+nav {width: auto;}
+
+nav>ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+nav>ul>li {
+  list-style: none;
+}
+
+#head-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+#hamburger-holder {
+  width: 2em;
+  height: 2em;
+  background-color: aqua;
+}
+
+/*================================================================*/
+/*stylings for sections*/
+
+section {
+  padding: 10em 2em;
+}
