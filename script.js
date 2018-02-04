@@ -10,6 +10,7 @@ var ABD = ['Slurred speech','Poor academic performance','Signs of hangover (bloo
 
 window.addEventListener('load', appendOptions);
 document.getElementById('add-behavior').addEventListener('click', pushBehaviorToList);
+//event listeners for function removeBehavior is added in function pushBehaviorList
 
 //================================================================//
 
@@ -53,6 +54,7 @@ function pushBehaviorToList() {
     var butVal = document.createTextNode('remove');
     
     bevButton.append(butVal);
+    bevButton.addEventListener('click', removeBehavior);
     bevButton.value = count;
     newBev.id = count;
     newBev.append(liVal);
@@ -65,5 +67,19 @@ function pushBehaviorToList() {
   }
   
   document.getElementById('input-options').value = '';
+  event.preventDefault();
+}
+
+//================================================================//
+//removes the associated list item 
+
+function removeBehavior() {
+  var idName = this.value;
+  
+  var bevList = document.getElementById('behavior-list');
+  var liVal = document.getElementById(idName);
+  
+  bevList.removeChild(liVal);
+  
   event.preventDefault();
 }
