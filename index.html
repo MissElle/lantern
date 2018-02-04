@@ -8,43 +8,48 @@
   </head>
   
   <body>
-    <header>
-      <div id="logo"></div>
-      <h1><a href="#" target="_self">The Lantern</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#" target="_self">About</a></li>
-          <li><a href="#" target="_self">ABD</a></li>
-          <li><a href="#" target="_self">Search</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <article>
-      <section>
-        <form id="the-lantern">
-          <input list="behavior-options" id="input-options" name="input-options">
-          <datalist id="behavior-options">  
-            <option value=""></option>
-          </datalist>
-          
-          <ul id="behavior-list">
-          </ul>
-          
-          <button id="add-behavior">Add Behavior</button>
-          <button id="start-query">Save Session</button>
-        </form>
-      </section>
+    <div id=wrapper>
+      <header>
+        <div id="logo"></div>
+        <div id="head-nav">
+          <h1><a href="#" target="_self">The Lantern</a></h1>
+          <nav>
+            <ul>
+              <li><a href="#" target="_self">About</a></li>
+              <li><a href="#" target="_self">ABD</a></li>
+              <li><a href="#" target="_self">Search</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="hamburger-holder"></div>
+      </header>
+
+      <article id="main">
+        <section>
+          <form id="the-lantern">
+            <input list="behavior-options" id="input-options" name="input-options">
+            <datalist id="behavior-options">  
+              <option value=""></option>
+            </datalist>
+
+            <ul id="behavior-list">
+            </ul>
+
+            <button id="add-behavior">Add Behavior</button>
+            <button id="start-query">Save Session</button>
+          </form>
+        </section>
+
+        <section>
+        </section>
+
+      </article>
+
+      <footer>
+        <small><a href="https://www.noschoolviolence.org/" target="_blank">&copy;2018 NSSD|NoSchoolViolence.org</a></small>
+      </footer>
+    </div>
       
-      <section>
-      </section>
-      
-    </article>
-    
-    <footer>
-      <small><a href="https://www.noschoolviolence.org/" target="_blank">&copy;2018 NSSD|NoSchoolViolence.org</a></small>
-    </footer>
-    
     <script src="script.js"></script>
   </body>
 
