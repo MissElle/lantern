@@ -1,0 +1,68 @@
+This file contains fake odds ratio data for each violence type indexed by behavior. This data will be imported into the sample python script for proof-of-concept 2.0 using numpy arrays and the odds ratios will be summed.
+Trait,weapons_use_OR,stealing_OR,fighting_OR,drug_use_OR,making_threats_OR,verbal_bullying_OR,vandalism_OR,cyber_bullying_OR,gang_activities_OR,intimidation_OR,ostracizing_OR,sexual_harrassment_OR
+Abandoning commitments,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+Abandonment of friends and social groups,4.2,2.8,2.8,9.1,2.1,3.9,1.4,6.8,2.3,3.5,4.6,1.3
+Abandonment or loss of interest in favorite pastimes,4.2,2.8,2.8,9.1,2.1,3.9,1.4,6.8,2.3,3.5,4.6,1.3
+Academic problems,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+Aggressive behavior,8.5,3.3,8.5,3.3,12.5,8.5,8.5,8.5,8.5,12.8,5.8,9.3
+An awkward phase,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+Anger and irritability,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+"Appears fearful anxious or paranoid",6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Attitude. Teenager and bad attitude,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
+Avoidance of food and noticeable changes in eating habits should trigger concern.,1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Body image issues,1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Changes in eating habits,1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Changes in eating patterns that result in dramatic weight gain or loss,1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+"Changes in personality (becomes more aggressive angry withdrawn etc.)",6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Changes in sleep patterns,1.1,2.4,2.1,4.8,3.1,2.8,1.1,2.3,0.8,1.4,2.3,2.1
+Curfew violations,0.9,6,2.3,4.2,1,0.3,9.8,1.3,4.6,1.1,3.3,2.4
+Defiance,8.5,3.3,8.5,3.3,12.5,8.5,8.5,8.5,8.5,12.8,5.8,9.3
+Difficulty concentrating,1.1,2.4,2.1,4.8,3.1,2.8,1.1,2.3,0.8,1.4,2.3,2.1
+Dramatic changes in eating habits,1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Eating habits that result in noticeable weight loss or gain,1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Excessive isolation,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1
+Excessive moodiness and tears,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Excessive sensitivity to criticism,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Excessive sleeping beyond your child's normal fatigue or insomnia,1.1,2.4,2.1,4.8,3.1,2.8,1.1,2.3,0.8,1.4,2.3,2.1
+"Excessive sleeping beyond usual teenage fatigue which could indicate depression or substance abuse; difficulty in sleeping insomnia and other sleep disorders",1.1,2.4,2.1,4.8,3.1,2.8,1.1,2.3,0.8,1.4,2.3,2.1
+Experience isolation from friends?,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Expressions of hopelessness or worthlessness,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Feelings of worthlessness and/or helplessness,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Have visible marks or bruises?,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+High risk behaviors,10,10,10,10,10,10,10,10,10,10,10,10
+Impulsivity,3.4,9.3,6.3,8.2,4.5,3.3,9.1,2.4,1.8,4.9,3.3,3.1
+Isolation from family members,3.7,2.4,8.2,4.8,4.9,3.8,3.3,5.7,1.2,6.3,4.2,2.3
+Lack of motivation,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+Loss of interest in normal activities,4.2,2.8,2.8,9.1,2.1,3.9,1.4,6.8,2.3,3.5,4.6,1.3
+Loss of self-esteem,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Lying,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Make changes in their daily rituals?,4.2,2.8,2.8,9.1,2.1,3.9,1.4,6.8,2.3,3.5,4.6,1.3
+Obsessive body-image concerns,1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Over-reactive arguing,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Paranoia and excessive secrecy,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+"Personality shifts and changes such as aggressiveness and excess anger that are sharply out of character and could indicate psychological drug or sexual problems",4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Poor academic performance,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+Poor school attendance,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+"Purging (forced vomiting) after eating - be alert for both dramatic weight loss without changes in eating habits (which could of course indicate other health issues that require a doctor's attention) and also for immediate trips to the bathroom or other private spot after a meal.",1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Retreat from school or activities?    ,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+Secrecy,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Self-mutilation (cutting),6.9,2.1,3.5,15.8,1.1,2.3,6.8,1.1,1.1,1.6,6.4,2
+"Self-mutilation or mention of hurting himself or herself",6.9,2.1,3.5,15.8,1.1,2.3,6.8,1.1,1.1,1.6,6.4,2
+"Show a dramatic in weight appearance and/or grades?",1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+"Signs of hangover (bloodshot eyes changes in pupils)",1.3,3.6,7.9,12.3,4.4,8.8,4.5,6.6,2.1,5.7,5.8,2.1
+Slurred speech,1.3,3.6,7.9,12.3,4.4,8.8,4.5,6.6,2.1,5.7,5.8,2.1
+Social isolation,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+"Social isolation abandonment of peer group",4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Spend excessive amounts of time in contact with the person they are dating through cell phones and computers?,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Spend excessive amounts of time with the person they're dating?,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Sudden changes in academic performance,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+Sudden mood swings,6.3,2.2,8.8,13.3,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Thoughts of suicide,10.3,2.2,8.8,23.1,10.2,9.8,2.2,11.9,1.1,8.8,7.3,1.1
+Tremors or impaired coordination,1.3,3.6,7.9,12.3,4.4,8.8,4.5,6.6,2.1,5.7,5.8,2.1
+Unexpected and dramatic decline in academic performance,2.1,3.3,3.1,5.4,3.3,8.5,19.8,6.6,1.1,2.3,6.8,2.2
+Unexpected weeping or excessive moodiness,4.3,1.1,9.7,5.4,8.9,3.8,2.9,1.9,2.4,3.2,8.6,2.6
+Unexplained aches and pains,1.1,2.4,2.1,4.8,3.1,2.8,1.1,2.3,0.8,1.4,2.3,2.1
+Unexplained hyperactivity,1.1,2.4,2.1,4.8,3.1,2.8,1.1,2.3,0.8,1.4,2.3,2.1
+Wear clothing inappropriate for the weather (possibly to hide marks)?,6.9,2.1,3.5,15.8,1.1,2.3,6.8,1.1,1.1,1.6,6.4,2
+"Weight loss and loss of appetite which could indicate an eating disorder",1.1,3.3,2.9,8.3,1.1,4.2,3.2,10.8,1,6.9,13.8,2.9
+Withdrawal,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1
