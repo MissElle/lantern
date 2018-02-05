@@ -129,7 +129,7 @@ function sendToPython(input) {
       url: BASE_URL,
       data: sendData,
       success: function(data) {
-          var result = JSON.stringify(data); 
+          var result = JSON.parse(data); 
           dictArr.push(result);
           console.log("I'm listening to this python file right meow");
           console.log(result);
