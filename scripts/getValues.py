@@ -67,5 +67,8 @@ class getValues(jsonList):
 
         
     def do_POST(self):
-        self.send_header("Access-Control-Allow-Origin", "*")
-        return HttpResponse(json.dumps(result_prob_dict), content_type='application/json')
+		if request.is_ajax() and request.POST:
+			self.send_header("Access-Control-Allow-Origin", "*")
+			return HttpResponse(json.dumps(result_prob_dict), content_type='application/json')
+			else:
+        raise Http404
