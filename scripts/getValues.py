@@ -1,24 +1,23 @@
 import json
 import pickle
 import numpy
+import json
+from django.http import Http404, HttpResponse
 
-try:
-    # Python 3
-    from http.server import HTTPServer, SimpleHTTPRequestHandler, test as test_orig
-    import sys
-    def test (*args):
-        test_orig(*args, port=int(sys.argv[1]) if len(sys.argv) > 1 else 8000)
-except ImportError: # Python 2
-    from BaseHTTPServer import HTTPServer, test
-    from SimpleHTTPServer import SimpleHTTPRequestHandler
+def more_todo(request):
+    if request.is_ajax():
+        todo_items = ['Mow Lawn', 'Buy Groceries',]
+        data = json.dumps(todo_items)
+        return HttpResponse(data, content_type='application/json')
+    else:
+        raise Http404
 
-class CORSRequestHandler (SimpleHTTPRequestHandler):
-    def end_headers (self):
-        self.send_header('Access-Control-Allow-Origin', '*')
-        SimpleHTTPRequestHandler.end_headers(self)
-
-if __name__ == '__main__':
-    test(CORSRequestHandler, HTTPServer)
+def add_todo(request):
+    if request.is_ajax() and request.POST:
+        data = {'message': "%s added" % request.POST.get('item')}
+        return HttpResponse(json.dumps(data), content_type='application/json')
+    else:
+        raise Http404
 
 class getValues(jsonList):
     
