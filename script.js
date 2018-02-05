@@ -95,7 +95,7 @@ function createPythonArray() {
   var bevListItems = document.getElementById('behavior-list').getElementsByTagName('li');
   
   for(var i=0; i<bevListItems.length; ++i){
-    pythonList.push(bevListItems[i].firstChild.nodeValue);
+    pythonList.push(bevListItems[i].firstChild.nodeValue.replace(/[^\x00-\x7F]/g, ''));
   }
   
 //  console.log(pythonList);
@@ -105,19 +105,21 @@ function createPythonArray() {
 
 //================================================================//
 //This code is borrowed from user georg in thread https://stackoverflow.com/questions/9229645/remove-duplicate-values-from-js-array
+//removal of ascii characters borrowed from Zaffy in thread https://stackoverflow.com/questions/20856197/remove-non-ascii-character-in-string
 
 function cleanPythonArray(arr){
-
+  
   newArray = arr.filter(function(item, pos, self){
     return self.indexOf(item) == pos;
   });
   
+  console.log(newArray);
   sendToPython(newArray);
-//  console.log(newArray);
 }
 
 //================================================================//
 //This is the final code that sends the list to python for evaluation
+
 
 function sendToPython(input) {
   var sendData = JSON.stringify(input);
@@ -125,7 +127,7 @@ function sendToPython(input) {
     {
       method: 'POST',
       data: sendData,
-      success: chartData,
+      success: mapData,
       error: reportAjaxError
     });
   
