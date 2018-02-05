@@ -137,3 +137,7 @@ function sendToPython(input) {
 function mapData(){
   console.log('the data has been pushed!');
 }
+
+function reportAjaxError() {
+  console.log('Oh no! There was an error somewhere');
+}
