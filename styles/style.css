@@ -4,7 +4,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  word-wrap: break-word;
 }
 
 html{
@@ -30,20 +29,30 @@ div#wrapper {
 article#main {
   height: 100%;
   width: 100%;
-  max-width: 60em;
-  margin: 0 auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+}
+
+div.constrict{
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
 }
 
 /*================================================================*/
 /*stylings for header and footer*/
 
 #logo {
-  width: 6em;
-  height: 4em;
+  width: 8em;
+  height: 8em;
   padding: 0.5em;
+  overflow: visible;
+}
+
+#logo>img{
+  background: radial-gradient(#ffffff,  transparent, transparent);
+  width: 80%;
 }
 
 header{
@@ -51,6 +60,11 @@ header{
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  background: #1a4d84; /* Old browsers */
+  background: -moz-linear-gradient(top, #1a4d84 0%, #91d8ea 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1a4d84 0%,#91d8ea 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1a4d84 0%,#91d8ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index: 50;
 }
 
 nav {width: 100%;}
@@ -87,6 +101,10 @@ nav>ul>li {
 
 /*================================================================*/
 /*stylings for sections*/
+
+section#about {
+  background-color: #b8d0d8;
+}
 
 section {
   text-align: center;
@@ -128,6 +146,8 @@ li {font-family: 'Lato', sans-serif;}
 
 h1 {font-size: 2.66em;}
 h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.2em; padding: .7em 0;}
 
 nav>ul>li{font-size: 1.3em;}
 
@@ -135,6 +155,11 @@ small{
   font-family: 'Raleway', sans-serif; 
   font-weight: bolder;
   font-size: 1.4rem;
+}
+
+h1 a, nav>ul>li a {
+  color: #ffffff;
+  text-shadow: .07em -.07em .03em #193f68;
 }
 
 a{text-decoration: none;}
