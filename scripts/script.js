@@ -1,6 +1,3 @@
-//==================SCRIPT FOR LANTERN V2.0=======================//
-// global variables, keeps a count for behaviors and master ABD
-
 var count = 1000;
 var BASE_URL = 'http://lantern-elligpope365078.codeanyapp.com/scripts/getValues.py';
 
@@ -126,21 +123,20 @@ function sendToPython(input) {
   $.ajax(
     {
       method: 'POST',
+      dataType: 'text',
+      contentType: 'json',
       url: BASE_URL,
       data: sendData,
       success: function(data) {
-          var result = JSON.stringify(data); 
-          dictArr.push(result);
           console.log("I'm listening to this python file right meow");
+          var result = data; 
+          dictArr.push(result);
           console.log(result);
       },
-      error: reportAjaxError
+      error: function(xhr) {
+  				console.log('Oh no! There was an error somewhere');
+  				console.log('request status: ' + xhr.status + 'status text: ' + xhr.statusText + ' ' + xhr.responseText );
+          
+      }
     });
   
-}
-
-
-
-function reportAjaxError() {
-  console.log('Oh no! There was an error somewhere');
-}
